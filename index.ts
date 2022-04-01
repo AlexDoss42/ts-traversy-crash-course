@@ -1,1 +1,1 @@
-let
+let id: number = 5;
