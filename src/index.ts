@@ -99,3 +99,13 @@ class Person {
 
 const alex = new Person(1, 'alex')
 const mike = new Person(2, 'mike')
+
+//  Generics
+function getArray<T>(items: T[]): T[] {
+    return new Array().concat(items);
+}
+
+let numArray = getArray<number>([1,2,3,4])
+let strArray= getArray<string>(['alex', 'garrett', 'rob']);
+
+numArray.push(1)

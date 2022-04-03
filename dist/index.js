@@ -58,3 +58,10 @@ class Person {
 }
 const alex = new Person(1, 'alex');
 const mike = new Person(2, 'mike');
+//  Generics
+function getArray(items) {
+    return new Array().concat(items);
+}
+let numArray = getArray([1, 2, 3, 4]);
+let strArray = getArray(['alex', 'garrett', 'rob']);
+numArray.push(1);
